@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PAGINAS WEB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylepw.css">
+  <!-- Font Awesome Link for Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <center>
+  <nav>
+    <!-- Checkbox for toggling menu -->
+    <input type="checkbox" id="check">
+
+    <!-- Menu icon -->
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <!-- Site logo -->
+    <img src="img/logo1.png" class="logo" alt="">
+
+    <!-- Navigation links -->
+    <ul>
+      <li><a href="index.html">inicio</a></li>
+      <li><a href="mundosvirtuales.html">Mundos Virtuales</a></li>
+      <li><a class="active" href="paginasweb.html">Paginas Web</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <h2>PAGINAS WEB</h2>
+
+  <div class="container">
+    <video src="img/animacion.mp4" class="slider" autoplay loop muted controls></video>
+
+    <ul>
+        <li onclick="videoslider('img/animacion.mp4')"><video src="img/animacion.mp4"></video></li>
+        <li onclick="videoslider('img/flores.mp4')"><video src="img/flores.mp4"></video></li>
+        <li onclick="videoslider('img/inicio.mp4')"><video src="img/inicio.mp4"></video></li>
+        <li onclick="videoslider('img/pastececytos.mp4')"><video src="img/pastececytos.mp4"></video></li>
+        <li onclick="videoslider('img/portafolio de trabajo.mp4')"><video src="img/portafolio de trabajo.mp4"></video></li>
+    </ul>
+</div>
+
+       <footer id="main-footer"> 
+        <section class="account">
+          <a href="https://www.instagram.com/its_fxbii/" i class='bx bxl-instagram'></i></a>
+          <a href="https://www.facebook.com/fabiola.arellano.583234?mibextid=ZbWKwL" i class='bx bxl-facebook'></i></a>
+          <a href="https://wa.link/or1aif" i class='bx bxl-whatsapp'></i></a>
+          <a href="https://t.me/+525517986805" i class='bx bxl-telegram'></i></a>
+          <a href="https://www.tiktok.com/@its_fxbii.07?_t=8nQyZW5Igr7&_r=1" i class='bx bxl-tiktok'></i></a>
+          <a href="mailto:juarezfabiola207@gmail.com" i class='bx bx-mail-send'></i></a>
+      </section>
+       </footer>
+
+
+       <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+    
+    </script>
+    
+</center>
+</body>
+<script src="script.js"></script>
+</html>
