@@ -1,0 +1,285 @@
+.logo {
+  max-width: 300px;
+  padding: 0 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: hola;
+  src: url("Bold Link.otf");
+}
+
+@font-face {
+  font-family: lol;
+  src: url("Night Love.otf");
+}
+
+body {
+  font-family: 'hola';
+    background-color: #d4c1e6;
+  background-size: cover;
+  height: 145vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+  background: #b183e6;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-family: 'hola';
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #c344e9;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 22px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  label.logo {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 890px) {
+  .checkbtn {
+    display: block;
+    
+  }
+
+  label.logo {
+    font-size: 22px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #c344e9;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 60px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #b183e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+
+  }
+}
+
+.contacto{
+  color: #000;
+  padding: 0;
+}
+.contacto .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.contacto h2{
+  font-size: 80px;
+  font-family: 'lol';
+  text-align: center;
+  padding:10px 30px;
+  margin: 0 350px;
+  margin-top: 15px;
+  background-color: #b183e6;
+  border: 8px #c344e9 dashed;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.50);
+}
+.contacto .fila{
+  display: flex;
+}
+
+.contacto .col{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: #b183e6;
+  border: 8px #c344e9 dashed;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.50);
+}
+
+/* From Uiverse.io by 3bdel3ziz-T */ 
+.fieldset {
+  --main-color: #4a4d96;
+  border: 2px var(--main-color) solid;
+  font-size: 30px;
+  border-radius: 8px;
+margin-top: -10000px;
+  margin:10px;
+}
+legend {
+  color: var(--main-color);
+}
+.fieldset input[type="text"] {
+  /* reset the field */
+  outline: none;
+  border: none;
+  background: transparent;
+
+  padding: 0 10px 10px 10px;
+  font-size: 30px;
+  font-family: 'lol';
+}
+
+.contacto button{
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #4a4d96;
+  width: fit-content;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 22px;
+  font-size: 30px;
+  color: #000;
+  position: relative;
+  z-index: 10;
+  font-family: 'lol';
+}
+.contacto button .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #744a96;
+  z-index: -1;
+  transition: 1s;
+}
+.contacto button:hover .overlay{
+  width: 100%;
+}
+.contacto .col img{
+  width: 100%;
+}
+.contacto .col .info{
+  position: absolute;
+  top: 40%;
+  font-size: 25px;
+  background-color: #b183e6;
+  padding: 20px;
+  max-width: 350px;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  border: 8px #c344e9 dashed;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.50);
+}
+.contacto .col .info ul{
+  list-style: none;
+}
+.contacto .col .info ul li{
+  margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+  color: #744a96;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+#main-footer { 
+	background: #b183e6;
+	color: white;
+	text-align: center;
+	padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.account a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  margin: 15px 10px 15px 0;
+  position: relative;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.account a:hover {
+  background: whitesmoke;
+  color: black;
+  box-shadow: 0 0 20px white ;
+}
